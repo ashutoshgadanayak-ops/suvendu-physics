@@ -415,10 +415,101 @@ section {
   color: var(--color-smoke);
 }
 
-.hero-cta-group {
+/* Hero Simplified Lead Capture Form */
+.hero-lead-form {
+  margin-top: var(--spacing-32);
+  width: 100%;
+  max-width: 680px;
+  text-align: left;
+}
+
+.hero-form-row {
   display: flex;
-  gap: var(--spacing-16);
+  gap: var(--spacing-12);
+  width: 100%;
+}
+
+.hero-form-input {
+  flex: 1;
+  background-color: rgba(9, 9, 11, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--color-charcoal);
+  border-radius: 9999px;
+  padding: 14px 20px;
+  font-family: var(--font-framegothic);
+  font-size: 14px;
+  color: var(--color-carbon-vellum);
+  outline: none;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-form-input:focus {
+  border-color: var(--color-twilight);
+  background-color: rgba(9, 9, 11, 0.7);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05);
+}
+
+.hero-form-input::placeholder {
+  color: var(--color-twilight);
+}
+
+.hero-form-submit {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  font-weight: var(--font-weight-medium);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-form-submit:active {
+  transform: scale(0.98);
+}
+
+.hero-form-notice-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-16);
+  padding-left: var(--spacing-16);
+  padding-right: var(--spacing-16);
   flex-wrap: wrap;
+  gap: var(--spacing-12);
+}
+
+.hero-form-notice {
+  font-size: 12px;
+  color: var(--color-smoke);
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-6);
+}
+
+.hero-youtube-link {
+  font-family: var(--font-neuemachinainktrap);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-smoke);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  transition: color 0.2s ease;
+}
+
+.hero-youtube-link:hover {
+  color: var(--color-iris-glow);
+}
+
+.hero-youtube-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
 }
 
 /* Physics Mockup Dashboard (Right side of Hero) */
@@ -1205,8 +1296,9 @@ section {
     text-align: center;
   }
   
-  .hero-cta-group {
-    justify-content: center;
+  .hero-lead-form {
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .philosophy-grid {
@@ -1281,6 +1373,24 @@ section {
   .form-group-row {
     grid-template-columns: 1fr;
     gap: var(--spacing-24);
+  }
+  .hero-form-row {
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+  
+  .hero-form-submit {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-form-notice-group {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: var(--spacing-12);
   }
   
   .footer-grid {

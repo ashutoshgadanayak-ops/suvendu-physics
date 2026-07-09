@@ -113,6 +113,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Hero Quick Lead Form Handling
+  const heroLeadForm = document.getElementById('hero-lead-form');
+  if (heroLeadForm) {
+    heroLeadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const submitBtn = heroLeadForm.querySelector('.hero-form-submit');
+      const originalText = submitBtn.textContent;
+      
+      const name = document.getElementById('hero-name').value;
+      const phone = document.getElementById('hero-phone').value;
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Booking...';
+      submitBtn.style.backgroundColor = 'var(--color-charcoal)';
+      submitBtn.style.color = 'var(--color-ash)';
+      
+      const result = await submitConsultation(
+        name,
+        '', // No email asked
+        phone,
+        'Hero Quick Book', // Grade source tag
+        'student',
+        'Quick Demo Class Booking from Hero Section'
+      );
+      
+      if (result.success) {
+        submitBtn.textContent = 'Demo Booked ✓';
+        submitBtn.style.backgroundColor = 'var(--color-iris-glow)';
+        submitBtn.style.color = 'var(--color-obsidian)';
+        heroLeadForm.reset();
+      } else {
+        submitBtn.textContent = 'Failed. Try Again';
+        submitBtn.style.backgroundColor = '#ef4444';
+        submitBtn.style.color = '#ffffff';
+      }
+      
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        submitBtn.style.backgroundColor = 'var(--color-carbon-vellum)';
+        submitBtn.style.color = 'var(--color-obsidian)';
+      }, 4000);
+    });
+  }
+
   // Interactive Physics Simulator Dashboard
   const mockupContainer = document.querySelector('.mockup-container');
   const angleLabel = document.querySelector('.sim-vector-box text');
