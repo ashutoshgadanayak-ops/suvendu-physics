@@ -1,4 +1,8 @@
 import { submitConsultation } from './firebase.js';
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Analytics
+inject();
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Nav Toggle
