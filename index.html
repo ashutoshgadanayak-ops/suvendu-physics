@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUVENDU PHYSICS | Elite Physics Coaching by Subhendu Dash</title>
+  <meta name="description" content="Cinematic and rigorous physics training for competitive exams (JEE, NEET, Olympiads) led by Subhendu Dash. Build deep physical intuition and problem-solving mastery.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo-link" id="logo">
+        <span class="logo-text">SUVENDU PHYSICS</span>
+        <span class="logo-dot"></span>
+      </a>
+      
+      <nav class="nav-bar">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#philosophy" class="nav-link">Methodology</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#contact" class="nav-link">Enrollment</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-pill btn-primary">Enroll Now</a>
+      </div>
+
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Physics by Subhendu Dash</span>
+        <h1 class="text-display hero-headline">Mastering the laws of the universe.</h1>
+        <p class="text-subheading hero-description">
+          Elite physics training designed for high school students and competitive exam aspirants. We bridge the gap between abstract mathematical models and physical intuition, preparing you to solve the toughest problems.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#courses" class="btn-pill btn-hero-primary">Explore Courses</a>
+          <a href="https://www.youtube.com/@SuvenduPhysics" target="_blank" class="btn-pill btn-secondary">Watch on YouTube</a>
+        </div>
+      </div>
+
+      <!-- Physics Dashboard Visual Mockup -->
+      <!-- Monotone Mentor Photo Visual -->
+      <div class="hero-visual">
+        <div class="mentor-image-container">
+          <img src="mentor.jpg" alt="Subhendu Dash" class="mentor-image">
+          <div class="mentor-caption-overlay">
+            <span class="mentor-title">Subhendu Dash</span>
+            <span class="mentor-subtitle">Founder & Head Instructor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Academic Mentorship</span>
+        <h2 class="text-heading-lg">Led by Subhendu Dash.</h2>
+      </div>
+      <div class="philosophy-grid">
+        <div class="philosophy-left">
+          <p class="text-body hero-description">
+            Subhendu Dash has spent over a decade training students to master physics. His philosophy values scientific curiosity over memorization. Under his leadership, Suvendu Physics has evolved from a local study hub into an elite physics incubator.
+          </p>
+        </div>
+        <div class="philosophy-right">
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 15h.01M12 9v4"/>
+            </svg>
+            <h3 class="text-heading-sm">Rigorous Mechanics</h3>
+            <p class="text-body-sm">
+              We decompose complex physical scenarios into core vectors and mathematical proofs, giving students the tools to solve any unseen problem.
+            </p>
+          </div>
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <path d="M2 12h20M12 2v20"/>
+            </svg>
+            <h3 class="text-heading-sm">Olympiad Standard</h3>
+            <p class="text-body-sm">
+              Our worksheets and problem sets are derived from standard academic materials (Irodov, Krotov, Resnick Halliday) adapted for competitive exams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- Methodology Section -->
+  <section id="philosophy">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Methodology</span>
+        <h2 class="text-heading-lg">Intuition first. Formulas second.</h2>
+      </div>
+      <div class="philosophy-grid">
+        <div class="philosophy-left">
+          <p class="text-body" style="margin-bottom: var(--spacing-32);">
+            Formula-memorization fails under the pressure of JEE Advanced or Olympiad exams. We build deep physical intuition so students can derive equations from scratch.
+          </p>
+          <!-- Interactive Vector Simulator -->
+          <div class="mockup-container">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="mockup-dot active"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+              </div>
+              <div class="mockup-title">Vector Simulator v1.0.4</div>
+              <div class="logo-dot"></div>
+            </div>
+            <div class="mockup-content">
+              <div class="physics-simulation">
+                <div class="sim-vector-box">
+                  <!-- SVG Vector Simulation Visualizer -->
+                  <svg class="sim-vector-svg" viewBox="0 0 400 140">
+                    <!-- Grid -->
+                    <defs>
+                      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1d1d2b" stroke-width="1"/>
+                      </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                    <!-- Inclined Plane -->
+                    <path d="M 50 110 L 350 110 L 350 30 Z" fill="none" stroke="var(--color-twilight)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                    <!-- Angle Theta -->
+                    <path d="M 100 110 A 50 50 0 0 0 88 95" fill="none" stroke="var(--color-iris-glow)" stroke-width="1.5"/>
+                    <text x="105" y="103" fill="var(--color-iris-glow)" font-size="10" font-family="Space Mono">&theta; = 15&deg;</text>
+                    <!-- Sphere -->
+                    <circle cx="210" cy="68" r="22" fill="var(--color-graphite)" stroke="var(--color-carbon-vellum)" stroke-width="1.5" />
+                    <!-- Center Dot -->
+                    <circle cx="210" cy="68" r="3" fill="var(--color-carbon-vellum)" />
+                    <!-- Vector Arrows -->
+                    <!-- Gravity mg -->
+                    <line x1="210" y1="68" x2="210" y2="120" stroke="var(--color-iris-glow)" stroke-width="1.5"/>
+                    <text x="215" y="115" fill="var(--color-iris-glow)" font-size="9" font-family="Space Mono">mg</text>
+                    <!-- Normal force N -->
+                    <line x1="210" y1="68" x2="195" y2="13" stroke="var(--color-iris-glow)" stroke-width="1.5"/>
+                    <text x="175" y="22" fill="var(--color-iris-glow)" font-size="9" font-family="Space Mono">N</text>
+                    <!-- Frictional force f -->
+                    <line x1="204" y1="89" x2="150" y2="75" stroke="var(--color-twilight)" stroke-width="1.2"/>
+                    <text x="140" y="90" fill="var(--color-twilight)" font-size="8" font-family="Space Mono">f_s</text>
+                  </svg>
+                  <div class="sim-equation">a = <sup>5</sup>/<sub>7</sub>g sin &theta;</div>
+                </div>
+                <div class="sim-stats">
+                  <div class="sim-stat-card">
+                    <div class="sim-stat-label">Mass (m)</div>
+                    <div class="sim-stat-value">2.50 kg</div>
+                  </div>
+                  <div class="sim-stat-card">
+                    <div class="sim-stat-label">Velocity (v)</div>
+                    <div class="sim-stat-value">4.12 m/s</div>
+                  </div>
+                  <div class="sim-stat-card">
+                    <div class="sim-stat-label">Energy (E)</div>
+                    <div class="sim-stat-value">31.25 J</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="philosophy-right">
+          <!-- Feature 1: Active Derivations -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4zM9 9h6v6H9z"/>
+            </svg>
+            <h3 class="text-heading-sm">Active Derivations</h3>
+            <p class="text-body-sm">
+              Every class begins with the foundational principles of a concept, walking students through the mathematical derivations of laws and theorems.
+            </p>
+          </div>
+
+          <!-- Feature 2: Smart Infrastructure -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <h3 class="text-heading-sm">Smart Classrooms</h3>
+            <p class="text-body-sm">
+              Fully air-conditioned (AC) study environments equipped with advanced interactive digital panels for clean concept visualization.
+            </p>
+          </div>
+
+          <!-- Feature 3: Regular Assessment -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+            <h3 class="text-heading-sm">Test Every 6 Classes</h3>
+            <p class="text-body-sm">
+              We conduct structured assessment exams every 6 classes to evaluate retention, clear conceptual doubts, and measure progress.
+            </p>
+          </div>
+
+          <!-- Feature 4: Timeline -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <h3 class="text-heading-sm">Syllabus Completion</h3>
+            <p class="text-body-sm">
+              We cover the full syllabus by early December, allocating the remaining months entirely to revision, papers, and mock drills.
+            </p>
+          </div>
+
+          <!-- Feature 5: Affordable Mentorship -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v12M15 9H9.5a2.5 2.5 0 000 5h5a2.5 2.5 0 010 5H9"/>
+            </svg>
+            <h3 class="text-heading-sm">Affordable Pricing</h3>
+            <p class="text-body-sm">
+              Elite education at a fair rate of only ₹2,000 per block of 12 classes, making top-tier physics mentorship accessible to all.
+            </p>
+          </div>
+
+          <!-- Feature 6: Parent Portal -->
+          <div class="philosophy-block">
+            <svg class="philosophy-icon" viewBox="0 0 24 24">
+              <path d="M12 22v-5M17 17l-5 5-5-5"/>
+            </svg>
+            <h3 class="text-heading-sm">Parent Portal & Analytics</h3>
+            <p class="text-body-sm">
+              A structured dashboard tracks student performance on weekly tests. Parents receive detailed reports on conceptual strengths.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Curriculums</span>
+        <h2 class="text-heading-lg">Targeted training programs.</h2>
+      </div>
+      
+      <div class="courses-list">
+        <!-- Course 1 -->
+        <div class="course-row">
+          <div class="course-meta">
+            <span class="course-badge">JEE / NEET Focus</span>
+            <h3 class="text-heading-sm course-name">Mechanics & Thermodynamics</h3>
+            <p class="course-target">Grade 11 Students & Repeaters</p>
+          </div>
+          <div class="course-details">
+            <div class="course-desc-col">
+              <p class="text-body-sm">
+                A rigorous foundation in classical Newtonian mechanics, fluid dynamics, and thermodynamics. Students learn to handle complex multi-force systems and rotational kinematics.
+              </p>
+            </div>
+            <div class="course-curriculum-col">
+              <h4 class="curriculum-title">Key Modules</h4>
+              <ul class="curriculum-list">
+                <li class="curriculum-item">Rotational Dynamics & Torque</li>
+                <li class="curriculum-item">Work-Energy-Power Proofs</li>
+                <li class="curriculum-item">Laws of Thermodynamics</li>
+                <li class="curriculum-item">Gravitation & Orbit Mechanics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-row">
+          <div class="course-meta">
+            <span class="course-badge">Advanced Electromagnetism</span>
+            <h3 class="text-heading-sm course-name">Electrodynamics, Optics & Modern Physics</h3>
+            <p class="course-target">Grade 12 Students & Repeaters</p>
+          </div>
+          <div class="course-details">
+            <div class="course-desc-col">
+              <p class="text-body-sm">
+                Focuses on field theory, electromagnetic induction, wave optics, and quantum physics. We translate abstract field concepts into logical, step-by-step vector calculations.
+              </p>
+            </div>
+            <div class="course-curriculum-col">
+              <h4 class="curriculum-title">Key Modules</h4>
+              <ul class="curriculum-list">
+                <li class="curriculum-item">Coulomb's Law & Gauss Theorem</li>
+                <li class="curriculum-item">Electromagnetic Induction</li>
+                <li class="curriculum-item">Wave Optics & Interference</li>
+                <li class="curriculum-item">Photoelectric Effect & Bohr Model</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-row">
+          <div class="course-meta">
+            <span class="course-badge">Foundation Stream</span>
+            <h3 class="text-heading-sm course-name">Olympiad & Pre-Foundation Physics</h3>
+            <p class="course-target">Grade 9 & 10 Students</p>
+          </div>
+          <div class="course-details">
+            <div class="course-desc-col">
+              <p class="text-body-sm">
+                Introduces young students to higher-level concepts using intuitive models. We emphasize logical reasoning and primary experimentation over formula-plugging.
+              </p>
+            </div>
+            <div class="course-curriculum-col">
+              <h4 class="curriculum-title">Key Modules</h4>
+              <ul class="curriculum-list">
+                <li class="curriculum-item">Mathematical Methods (Basic Calculus)</li>
+                <li class="curriculum-item">Kinematics & Graph Analysis</li>
+                <li class="curriculum-item">Ray Optics & Lenses</li>
+                <li class="curriculum-item">Current Electricity Foundations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- Video Showcase Section -->
+  <section id="showcase">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-48) auto;">
+        <span class="eyebrow">Classroom Showcase</span>
+        <h2 class="text-heading-lg">Step inside the lecture room.</h2>
+        <p class="text-subheading" style="margin: var(--spacing-16) auto 0 auto; max-width: 560px;">
+          Experience Subhendu Dash's unique style of translating vector mechanics and mathematical proofs into physical demonstrations.
+        </p>
+      </div>
+
+      <div class="showcase-player-container">
+        <!-- Interactive Mock Video Player Frame -->
+        <div class="video-frame" id="play-trigger">
+          <!-- Stand-in background depicting cinematic chalkboard diagram -->
+          <img class="video-thumbnail" src="https://img.youtube.com/vi/t3Q5zuX7XNA/maxresdefault.jpg" alt="Scalars and Vectors Lecture 1 Thumbnail">
+          <div class="play-overlay">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="video-caption">
+          Watch Lecture: Scalars & Vectors — Meaning, Representation & Order of Vectors
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Enrollment Form Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-48) auto;">
+        <span class="eyebrow">Request Consultation</span>
+        <h2 class="text-heading-lg">Secure your seat.</h2>
+        <p class="text-subheading" style="margin-top: var(--spacing-16); max-width: 560px; margin-left: auto; margin-right: auto;">
+          Submit your details to book a 1-on-1 counseling session and demo class with Subhendu Dash.
+        </p>
+      </div>
+
+      <div class="enroll-container">
+        <form class="enroll-form" id="enrollment-form">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Student or Parent Name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="grade" class="form-label">Grade / Stream</label>
+              <select id="grade" name="grade" class="form-select" required>
+                <option value="" disabled selected>Select class status</option>
+                <option value="9">Grade 9 / Foundation</option>
+                <option value="10">Grade 10 / Foundation</option>
+                <option value="11">Grade 11 / JEE & NEET Stream</option>
+                <option value="12">Grade 12 / JEE & NEET Stream</option>
+                <option value="dropper">Dropper / Repeater Batch</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Who is completing this form?</label>
+            <div class="role-toggle-group">
+              <div class="role-option">
+                <input type="radio" id="role-student" name="role" value="student" checked>
+                <label for="role-student">Student</label>
+              </div>
+              <div class="role-option">
+                <input type="radio" id="role-parent" name="role" value="parent">
+                <label for="role-parent">Parent</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Additional notes or goals</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your learning goals or target competitive exams..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-pill btn-primary" style="margin-top: var(--spacing-8); width: 100%;">
+            Submit Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">SUVENDU PHYSICS</span>
+        <p class="text-body-sm" style="margin-top: var(--spacing-8);">
+          Elite Physics Coaching Centre led by Subhendu Dash. Enabling students to master vectors, mechanics, and physical laws.
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-title">Links</h4>
+        <a href="#about" class="footer-link">About Mentor</a>
+        <a href="#philosophy" class="footer-link">Methodology</a>
+        <a href="#courses" class="footer-link">Programs</a>
+        <a href="https://www.youtube.com/@SuvenduPhysics" target="_blank" class="footer-link">YouTube Channel</a>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-title">Contact</h4>
+        <p class="text-body-sm">Suvendu Physics Learning Centre</p>
+        <p class="text-body-sm">Subhendu Dash Academy</p>
+        <p class="text-body-sm">Email: subhendudash@physics.edu</p>
+        <p class="text-body-sm">Phone: +91 94372 90123</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="text-caption">&copy; 2026 SUVENDU PHYSICS. All rights reserved.</p>
+      <p class="text-caption">A Midnight Cinema Aesthetic designed for educational clarity.</p>
+    </div>
+  </footer>
+
+  <canvas id="physics-bg"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
