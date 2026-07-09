@@ -4,12 +4,16 @@
   "description": "SUVENDU PHYSICS - Premium Physics Coaching Landing Page",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y vite --port 3000 --open"
+    "dev": "npx -y vite --port 3000 --open",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "Subhendu Dash",
   "license": "ISC",
   "dependencies": {
     "firebase": "^12.15.0"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
   }
 }
